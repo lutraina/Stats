@@ -1,0 +1,33 @@
+{
+    "name": "web/statsd-bundle",
+    "description" : "Add statds metrics in your sf2 app. Allow you to bind metrics on any sf2 event.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": ["symfony", "bundle", "statsd", "web"],
+    "authors": [
+        {
+            "name": "Web",
+            "email": "opensource@web.fr",
+            "homepage": ""
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "minimum-stability" : "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/property-access" : ">=2.2",
+        "web/statsd": "~1.2.1"
+    },
+    "require-dev": {
+        "atoum/atoum": "@stable",
+        "symfony/event-dispatcher": "@stable",
+        "symfony/symfony": "~2.3",
+        "web/coke" : "~1.2",
+        "web/symfony2-coding-standard" : "~1.2"
+    },
+	"autoload": {
+        "psr-4": { "Web\\Bundle\\StatsdBundle\\": "src/" }
+    }
+}
